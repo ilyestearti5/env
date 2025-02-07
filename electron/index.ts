@@ -3,7 +3,8 @@ import {
   setUpAppEnv,
   startApplicationForDesktop,
 } from "biqpod/electron";
-import { development, production } from "../app.json";
+import project from "../project.config";
+const { development, production } = project;
 setUpAppEnv({
   devUrl: "http://localhost:" + development.port,
   prodUrl: production.url,

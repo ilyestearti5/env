@@ -3,7 +3,7 @@ import path from "node:path";
 import react from "@vitejs/plugin-react";
 import electron from "vite-plugin-electron";
 import { PluginOption, defineConfig } from "vite";
-import { development } from "./app.json";
+import project from "./project.config";
 export default defineConfig(async ({ mode }) => {
   const isElectron = mode === "electron";
   const plugins: PluginOption[] = [
@@ -43,7 +43,7 @@ export default defineConfig(async ({ mode }) => {
     },
     plugins,
     server: {
-      port: development.port,
+      port: project.development.port,
       host: true,
     },
     clearScreen: false,
