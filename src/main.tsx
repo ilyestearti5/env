@@ -4,11 +4,31 @@ import "./server";
 import { startApplication } from "biqpod/ui/app";
 import { App } from "./App";
 import { BrowserRouter } from "react-router-dom";
-startApplication({
-  app: (
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  ),
-  isDev: import.meta.env.DEV,
-});
+import { addCommand } from "biqpod/ui/hooks";
+startApplication(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  {
+    onPrepare() {
+      addCommand(
+        {
+          commandId: "delete-focused-schedule",
+          commands: [
+            {
+              type: "actions/exec",
+              payload: ["delete-focused-schedule"],
+            },
+          ],
+          label: "Schedule : Delete Focused",
+        },
+        [
+          {
+            value: "delete",
+          },
+        ]
+      );
+    },
+    isDev: import.meta.env.DEV,
+  }
+);

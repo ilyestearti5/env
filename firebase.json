@@ -2,7 +2,7 @@
   "hosting": {
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "site": "talk-dz",
+    "site": "tse-usto",
     "rewrites": [
       {
         "source": "**",
