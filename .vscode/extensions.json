@@ -1,0 +1,18 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846
+  // for the documentation about the extensions.json format
+  "recommendations": [
+    "mrmlnc.vscode-json5",
+    "PKief.material-icon-theme",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "usernamehw.remove-empty-lines",
+    "bradlc.vscode-tailwindcss",
+    "bierner.emojisense",
+    "ritwickdey.liveserver",
+    "formulahendry.auto-rename-tag",
+    "github.copilot",
+    "helixquar.randomeverything",
+    "dejmedus.tailwind-sorter"
+  ]
+}

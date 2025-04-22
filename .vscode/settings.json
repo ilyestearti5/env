@@ -1,0 +1,6 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 0,
+  "postman.settings.dotenv-detection-notification-visibility": false
+}
